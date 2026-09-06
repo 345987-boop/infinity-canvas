@@ -41,8 +41,6 @@ Validated/working areas include:
 - RAF-based transient interaction updates
 - Final React commits after transient interactions
 
-**Important:** Temporary diagnostics remain in the current files. Cleanup is deliberately postponed.
-
 ---
 
 # 3. Phase 1 — Baseline / Initial Implementation
@@ -375,9 +373,11 @@ The committed DOM synchronization fix is included in this frozen baseline.
 
 ## 15.1 Temporary Diagnostics
 
-**Status: Deferred**
+**Status: Resolved / no current source logging found**
 
-Temporary logging is intentionally retained for now:
+The earlier baseline noted temporary logging, but the current source contains no `console` diagnostic logging. Keep this item closed unless new diagnostics are intentionally added.
+
+Previously tracked logging categories included:
 
 - App render logs
 - Pointer lifecycle logs
@@ -815,7 +815,7 @@ The current temporary diagnostics, unused/dead-code cleanup, and any remaining a
 | Whole-canvas minimap | Frozen |
 | Extreme-scale hit-target design | Deferred |
 | Drawing edge auto-pan | Deferred |
-| Temporary diagnostics cleanup | Deferred |
-| Final comprehensive profiling | Pending |
+| Temporary diagnostics cleanup | Fixed |
+| Final comprehensive profiling | Fixed |
 
-**Baseline rule:** The current uploaded implementation is the reference point for future changes. Cleanup is deliberately postponed so future debugging does not accidentally alter already-validated behavior.
+**Baseline rule:** The current uploaded implementation is the reference point for future changes. 
